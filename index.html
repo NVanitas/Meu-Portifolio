@@ -3,191 +3,185 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nicolas da Silva Santos</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="css/style.css" rel="stylesheet">    
- 
+    <title>Nicolas da Silva Santos - Desenvolvedor de Software</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/ekko-lightbox@5.3.0/dist/ekko-lightbox.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para garantir que as imagens cubram o card sem distorção */
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Define uma altura fixa para todas as imagens */
+            object-fit: cover; /* A imagem vai cobrir o espaço do card sem distorcer */
+        }
+    </style>
+</head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: white">
-        <a class="navbar-brand" href="#" style=color:#2c3e50>Nicolas da Silva Santos</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="font-weight: 700; color: #2c3e50;">Nicolas da Silva Santos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample04">
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-            <ul class="navbar-nav">
-                <li>
-                    <a href="#projetos" class="nav-link" style=color:#2c3e50> Projetos</a>
-                </li>
-                <li>
-                    <a href="#meusconhecimentos" class="nav-link" style=color:#2c3e50>Conhecimentos</a>
-                </li>
-                <li>
-                    <a href="#contato" class="nav-link" style=color:#2c3e50>Contato</a>
-                </li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#sobre-mim">Sobre Mim</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#meusconhecimentos">Conhecimentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <section class="jumbotron text-center corPrimaria">
-        <div class="container">
-            <img src="material/images/Photo.png" class="foto-perfil" alt="Responsive image">
-            <h1 class="jumbotron-heading" style="color:white;text-transform: uppercase;">Nicolas da Silva Santos</h1>
-            <p class="lead" style="color:white !important;">Software Developer - Back-End
-            </p>
-            <p>
-                <button href="#contato" class="btn btn-dark my-2 " id="Copiar">nicolasdasilvasantos04@gmail.com</button>
-            </p>
-            <a href="https://github.com/NVanitas" target="_blank"><i style="color:white" class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/nicolasdasilvasantos/" target="_blank"><i style="color:white" class="fab fa-linkedin fa-2x"></i></a>
-            <section class="jumbotron text-center corPrimaria" id="sobre-mim">
-                <div class="container">
-                    <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
-                    <p class="lead paragrafoBrancos">Olá, meu nome é Nicolas tenho 19 anos, sou um estudante da Fatec Mauá, atualmente cursando Informática para Negócios. Desde sempre, nutro uma curiosidade incessante pelas tecnologias .NET e Web, e ao longo do tempo, desenvolvi uma verdadeira paixão por elas. Tenho grande satisfação em compartilhar meus conhecimentos com os outros, e minha jornada é marcada pelo constante desejo de aprimorar minhas habilidades e conhecimentos nesta área.</p>
-                </div>
-            </section>
+<!-- Introdução / Hero Section -->
+<section class="jumbotron text-center bg-primary text-white mb-0" id="sobre-mim">
+    <div class="container">
+        <img src="material/images/Photo.png" alt="Foto de Perfil" class="img-fluid rounded-circle mb-4" style="width: 150px; height: 150px;">
+        <h1 class="display-4">Nicolas da Silva Santos</h1>
+        <p class="lead">Desenvolvedor de Software - Back-End</p>
+        <button class="btn btn-dark my-2" id="Copiar" onclick="navigator.clipboard.writeText('nicolasdasilvasantos04@gmail.com')">nicolasdasilvasantos04@gmail.com</button>
+        <div class="social-icons mt-3">
+            <a href="https://github.com/NVanitas" target="_blank" class="text-white mr-3"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/nicolasdasilvasantos/" target="_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
-    </section>
-    <!-- Projects -->
-    <div class="album py-5 bg-light " id="projetos">
-        <div class="container">
-            <h2 class="text-center jumbotron-heading titulosVerdes">Projetos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="material/images/One.png" data-holder-rendered="true"
-                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
-                        <div class="card-body">
-                            <p class="card-text">Desenvolvi um projeto robusto em ADO.NET para um zoológico, implementando um sistema completo de CRUD para o cadastro de alimentos e animais. Com habilidade técnica sólida e atenção meticulosa aos detalhes, o projeto visa oferecer uma solução eficiente e organizada para o gerenciamento desses dados críticos. Estou entusiasmado para discutir como essa experiência pode agregar valor à sua empresa, contribuindo com conhecimentos sólidos em desenvolvimento de software,usando as tecnologias:
-                            </p>
-                            <ul>
-                                <li>C#</li>
-                                <li>Ado.Net</li>
-                                <li>Forms</li>
-                                <li>Microsoft SQL</li>
-                                <li>Git</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-primary"><a  href="https://github.com/NVanitas/Projeto-Zoo" target="_blank"> Ver Código</a></button>
-                                </div>
-                                <small class="text-muted">Projeto Zoo</small>
-                            </div>
-                        </div>
+    </div>
+</section>
+
+<!-- Sobre Mim -->
+<section class="py-5" id="sobre-mim">
+    <div class="container">
+        <h2 class="text-center text-primary mb-4">Sobre Mim</h2>
+        <p class="lead text-center">Olá, sou o Nicolas, estudante de Informática para Negócios na Fatec Mauá, com uma grande paixão por tecnologias .NET e Web. Tenho um profundo interesse em desenvolvimento de software e estou constantemente buscando aprimorar minhas habilidades. Minha missão é desenvolver soluções eficientes e compartilhar meu conhecimento com os outros.</p>
+    </div>
+</section>
+
+<!-- Projetos -->
+<section class="py-5 bg-light" id="projetos">
+    <div class="container">
+        <h2 class="text-center text-primary mb-4">Meus Projetos</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <a href="material/images/One.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="material/images/One.png" class="card-img-top" alt="Projeto Zoo">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Zoo</h5>
+                        <p class="card-text">Desenvolvi uma aplicação ADO.NET para um zoológico, implementando um sistema completo de CRUD para cadastro de animais e alimentos. Tecnologias utilizadas:</p>
+                        <ul>
+                            <li>C#</li>
+                            <li>Ado.Net</li>
+                            <li>Windows Forms</li>
+                            <li>SQL Server</li>
+                            <li>Git</li>
+                        </ul>
+                        <a href="https://github.com/NVanitas/Projeto-Zoo" class="btn btn-primary" target="_blank">Ver Código</a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="material/images/Two.png" data-holder-rendered="true"
-                            style="height: 225px; width: 100%; display: block;">
-                        <div class="card-body">
-                            <p class="card-text"> Uma aplicação ASP.NET MVC com funcionalidades de CRUD em apenas uma hora. Este projeto eficiente e ágil demonstra minha capacidade de entrega rápida e eficaz, utilizando um banco de dados para gerenciar dados de forma precisa. Estou entusiasmado para discutir como minha abordagem ágil e resultados concretos podem agregar valor imediato à sua empresa, usando as tecnologias:
-                            </p>
-                            <ul>
-                                <li>C#</li>
-                                <li>Asp.Net</li>
-                                <li>MVC</li>
-                                <li>Microsoft SQL</li>
-                                <li>Git</li>
-                
-                            </ul>
-                            
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-primary"><a  href=" https://github.com/NVanitas/Proj-CrudMvc" target="_blank"> Ver Código</a> </button>
-                                </div>
-                                <small class="text-muted">Projeto Asp.Net Mvc</small>
-                            </div>
-                        </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <a href="material/images/Two.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="material/images/Two.png" class="card-img-top" alt="Projeto PomoTodo">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">PomoTodo</h5>
+                        <p class="card-text">Uma aplicação web desenvolvida com ASP.NET MVC, que integra um método Pomodoro para gerenciamento de tempo, juntamente com um Kanban para visualização das tarefas.</p>
+                        <ul>
+                            <li>C#</li>
+                            <li>ASP.NET</li>
+                            <li>Mvc</li>
+                            <li>SQLite</li>
+                            <li>Git</li>
+                        </ul>
+                        <a href="https://github.com/NVanitas/PomoTodo_Git" class="btn btn-primary" target="_blank">Ver Código</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
-    <section class="centered-section" id= "meusconhecimentos">
-        <div class="container">
-            <h2 class="text-center jumbotron-heading titulosVerdes">Meus Conhecimentos</h2>
-            <div class="row pad2">
-              <div class="col-lg-4">
-                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="material/images/Plan.png" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-                <h2 class="fw-normal ">Planejamento</h2>
-                <p class="just"> Modelo Incremental,Prototipação e Modelo de Processo de Software Evolucionário.</p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="material/images/Uml.png"  role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-                <h2 class="fw-normal">UML</h2>
-                <p class="just">Diagrama Caso de uso, Diagrama de Classes, Diagrama de Pacotes e Diagrama de Componentes.</p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="material/images/Big.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-                <h2 class="fw-normal">Big-O</h2>
-                <p class="just">Tempos de execução: O(Logn), O(n), O(nLog n), O(n²) e O(n!).</p>
-              </div><!-- /.col-lg-4 -->
+<!-- Meus Conhecimentos -->
+<section class="py-5 bg-light" id="meusconhecimentos">
+    <div class="container">
+        <h2 class="text-center text-primary mb-4">Meus Conhecimentos</h2>
+        <div class="row">
+            <!-- Conhecimento - UML + Planejamento -->
+            <div class="col-lg-4 mb-4 text-center">
+                <div class="card shadow-sm border-light rounded">
+                    <a href="material/images/Uml.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="material/images/Uml.png" class="card-img-top mb-3" alt="Planejamento e UML">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Planejamento & UML</h4>
+                        <p class="card-text">Utilizo metodologias ágeis como Scrum e modelos de desenvolvimento incremental para gerenciar projetos. Tenho experiência em UML, incluindo diagramas de casos de uso, classes e pacotes, para planejar e modelar sistemas de forma eficaz.</p>
+                    </div>
+                </div>
             </div>
-            <div class="container padt pad2">
-              <div class="row">
-                <div class="col-lg-4">
-                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="material/images/Net.png" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-                  <h2 class="fw-normal">.Net Framework</h2>
-                  <p class="just"> C#,Ado.Net,Asp.Net,Windows Form e Console.</p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="material/images/Py.png"  role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-                  <h2 class="fw-normal">MS SQL Server</h2>
-                  <p class="just"> Consultas, Inner Join, Outer Join,Procedure,Trigger e Funções.</p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="material/images/Web.png" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-                  <h2 class="fw-normal">Web</h2>
-                  <p class="just">Html, Css, Bootstrap, Java Script.</p>
-                </div><!-- /.col-lg-4 -->
-              </div>
-            </div>
-        </div>
-    </section>
-  
 
-    <section Id="contato" class="corSec">
-        <div class="corPrimaria">
-            <div class="container-fluid">
-                <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades</h3>
-                <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
-                        href="mailto:nicolasdasilvasantos04@gmail.com" style="color: white;">nicolasdasilvasantos04@gmail.com👈</a></h4>
+            <!-- Conhecimento - Scrum -->
+            <div class="col-lg-4 mb-4 text-center">
+                <div class="card shadow-sm border-light rounded">
+                    <a href="material/images/Scrum.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="material/images/Scrum.png" class="card-img-top mb-3" alt="Scrum">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Scrum</h4>
+                        <p class="card-text">Experiência prática em metodologias ágeis, com foco no framework Scrum. Acredito que a colaboração contínua e a adaptação rápida são essenciais para o sucesso de um projeto de software.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conhecimento - BPMN -->
+            <div class="col-lg-4 mb-4 text-center">
+                <div class="card shadow-sm border-light rounded">
+                    <a href="material/images/Bpmn.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="material/images/Bpmn.png" class="card-img-top mb-3" alt="BPMN">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">BPMN</h4>
+                        <p class="card-text">Uso BPMN (Business Process Model and Notation) para modelar processos de negócios, garantindo uma visão clara e eficiente das operações e contribuindo para melhorias contínuas nos fluxos de trabalho.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="text-center" style="background-color:#2c3e50;padding:0px; margin:0px">
-        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2023, Nicolas da Silva Santos
-        </p>
-        
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+<!-- Contato -->
+<section id="contato" class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <h3>Estou disponível para novas oportunidades</h3>
+        <p><a href="mailto:nicolasdasilvasantos04@gmail.com" class="text-white">nicolasdasilvasantos04@gmail.com</a></p>
+    </div>
+</section>
 
-<script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
-<script src="js/index.js" crossorigin="anonymous"></script>
-</head>
+<!-- Footer -->
+<footer class="text-center bg-light py-4">
+    <p class="mb-0" style="color:#2c3e50;">&copy; 2024 Nicolas da Silva Santos. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ekko-lightbox@5.3.0/dist/ekko-lightbox.min.js"></script>
+
+<script>
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
+
 </body>
-
 </html>
